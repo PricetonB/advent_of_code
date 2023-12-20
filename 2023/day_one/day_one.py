@@ -23,7 +23,7 @@ def checkLetters(char, line):
         t = 0
         it = 0
         numCounter = 0   
-        for number in prefixMap[char]: #for every number that starts with it
+        for number in prefixMap[char]: #for every number that starts with the current character
             #while were in range of line and characters continue to spell a number
             while index+it < len(line) and numMap[number][t] == line[index + it]: 
                 numCounter += 1 
