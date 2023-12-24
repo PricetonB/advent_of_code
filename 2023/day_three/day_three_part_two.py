@@ -30,7 +30,7 @@ for r in range(ROW):
                 for y in range(c - counter_val, c + 2):
                     if 0 <= x < ROW and 0 <= y < COL and lines[x][y] != "." and not lines[x][y].isdigit():
                         valid = True
-                    #if this line is true add to counter and products matrix map
+                    #if star symbol found add to counter and products matrix map
                     if 0 <= x < ROW and 0 <= y < COL and lines[x][y] == "*":
                         counter[x][y] += 1
                         prods[x][y] *= num
